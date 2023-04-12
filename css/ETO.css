@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Estilos para el encabezado*/
+header {
+    background-color: black;
+    color: lightsteelblue;
+    justify-content: space-between;
+    padding: 1em;
+    font-family: 'IM Fell DW Pica', serif;
+    z-index: 1;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+nav {
+    text-align: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 1em;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+a:hover {
+    color: black;
+    background-color: lightsteelblue;
+    border: 5px solid lightsteelblue;
+    text-decoration: underline;
+}
+
+.icon {
+    color: lightsteelblue;
+    text-decoration: none;
+    padding: 1px;
+    font-size: xx-large;
+}
+
+.icon:hover {
+    color: plum;
+    background-color: black;
+    text-decoration: none;
+    padding: 0px;
+    border: none;
+}
+
+.biografia {
+    color: black;
+    background-color: lightsteelblue;
+    border: 5px solid lightsteelblue;
+    text-decoration: underline;
+}
+
+/* Estilos para el main */
+main {
+    margin-top: 80px;
+    padding: 20px;
+    background: radial-gradient(white, plum, lightsteelblue, midnightblue);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+h1,h2{
+    font-family: 'IM Fell DW Pica', serif;
+}
+.portadalibro{
+    width: 220px;
+    height: 300px;
+    margin-left: 10px;
+}
+
+/* boton */
+.button {
+    display: inline-block;
+    border-radius: 7px;
+    border: none;
+    background: linear-gradient(black, fuchsia, purple);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 13px;
+    box-shadow: 0px 14px 56px -11px black;
+    width: 10em;
+    padding: 1em;
+    transition: all 0.4s;
+    cursor: pointer;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 120px;
+}
+
+.button:hover {
+    background: linear-gradient(purple, fuchsia, black);
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.4s;
+}
+
+.button span:after {
+    content: 'ya!';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.7s;
+}
+
+.button:hover span {
+    padding-right: 3.55em;
+}
+
+.button:hover span:after {
+    opacity: 4;
+    right: 0;
+}
+
+/* containers */
+.container_imgydata{
+    width: 250px;
+}
+
+.container_resumen{
+    width: 40%;
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.saturn{
+    width: 80px;
+    height: 80px;
+}
+
+/*redes*/
+.container_redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding: 40px 5px 5px 0px;
+    width: 100%;
+}
+
+.redes {
+    color: beige;
+    background-color: violet;
+    border: solid gray 1px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+.redes:hover {
+    color: #fff;
+    background-color: black;
+    border: solid 1px black;
+    text-decoration: none;
+}
+
+/* Estilos para el pie de página */
+footer {
+    display: flex;
+    background-color: black;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: small;
+    padding: 5px 0px 5px 0px;
+}
+
+/*Media querys*/
+
+@media screen and (max-width:900px){
+    .container_resumen{
+        width: 60%;
+    }
+} 
+
+@media screen and (max-width:600px){
+    .container_imgydata{
+        width: 300px;
+        padding: 20px;
+    }
+    .container_resumen{
+        width: 80%;
+    }
+} 
+
+@media screen and (max-width:300px){
+    .container_resumen{
+        width: 100%;
+    }
+} 

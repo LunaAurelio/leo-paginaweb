@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Estilos para el encabezado*/
+header {
+    background-color: black;
+    color: lightsteelblue;
+    justify-content: space-between;
+    padding: 1em;
+    font-family: 'IM Fell DW Pica', serif;
+    z-index: 1;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+nav {
+    text-align: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 1em;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+a:hover {
+    color: black;
+    background-color: lightsteelblue;
+    border: 5px solid lightsteelblue;
+    text-decoration: underline;
+}
+
+.icon {
+    color: lightsteelblue;
+    text-decoration: none;
+    padding: 1px;
+    font-size: xx-large;
+}
+
+.icon:hover {
+    color: plum;
+    background-color: black;
+    text-decoration: none;
+    padding: 0px;
+    border: none;
+}
+
+.biografia {
+    color: black;
+    background-color: lightsteelblue;
+    border: 5px solid lightsteelblue;
+    text-decoration: underline;
+}
+
+/* Estilos para el main */
+main {
+    margin-top: 80px;
+    position: relative;
+    box-sizing: border-box;
+    z-index: 0;
+    background: radial-gradient(white, plum, lightsteelblue, midnightblue);
+}
+h1{
+    font-family: 'IM Fell DW Pica', serif;
+    text-align: center;
+}
+.container_autora {
+    font-size: large;
+    padding: 70px;
+    width: 90%;
+    margin: auto;
+}
+
+img{
+    width: 350px;
+    height: 450px;
+    margin: 20px;
+    box-shadow: -10px 20px 15px rgba(0, 0, 0, 0.5);
+}
+.imgbiografia{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 98%;
+}
+.creditos{
+    display: flex;
+    color: purple;
+    width: 100%;
+}
+
+/*redes*/
+.container_redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding: 40px 5px 5px 0px;
+}
+
+.redes {
+    color: beige;
+    background-color: violet;
+    border: solid gray 1px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+.redes:hover {
+    color: #fff;
+    background-color: black;
+    border: solid 1px black;
+    text-decoration: none;
+}
+
+/* Estilos para el pie de página */
+footer {
+    display: flex;
+    background-color: black;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: small;
+    padding: 5px 0px 5px 0px;
+}
+
+@media screen and (max-width:1200px) {
+    header {
+        flex-direction: column;
+        height: 120px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    .icon {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 400px){
+    header {
+        padding: 0px;
+        justify-content: space-around;
+    }
+}
