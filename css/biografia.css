@@ -104,12 +104,14 @@ img{
     margin: 20px;
     box-shadow: -10px 20px 15px rgba(0, 0, 0, 0.5);
 }
+
 .imgbiografia{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     width: 98%;
 }
+
 .creditos{
     display: flex;
     color: purple;
@@ -148,6 +150,7 @@ img{
 /* Estilos para el pie de página */
 footer {
     display: flex;
+    flex-direction: column;
     background-color: black;
     color: white;
     font-family: 'Times New Roman', Times, serif;
@@ -174,5 +177,42 @@ footer {
     header {
         padding: 0px;
         justify-content: space-around;
+    }
+    .container_autora{
+        padding: 0px;
+    }
+    img{
+        width: 150px;
+        height: 250px;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    header {
+        font-size: small;
+        height: 100px;
+    }
+
+    h2 {
+        margin: 0px;
+        font-size: 20px;
+    }
+    .icon {
+        font-size: large;
+    }   
+    .redes {
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width: 200px){
+    img{
+        width: 100px;
+        height: 200px;
+        margin: 0px;
+    }
+    .creditos{
+        font-size: 10px;
     }
 }

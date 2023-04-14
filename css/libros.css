@@ -218,6 +218,7 @@ p {
 /* Estilos para el pie de página */
 footer {
     display: flex;
+    flex-direction: column;
     background-color: black;
     color: white;
     font-family: 'Times New Roman', Times, serif;
@@ -243,5 +244,26 @@ footer {
     header {
         padding: 0px;
         justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    header {
+        font-size: small;
+        height: 100px;
+    }
+
+    h2 {
+        margin: 0px;
+        font-size: 20px;
+    }
+    .icon {
+        font-size: large;
+    }   
+    .redes {
+        margin: 0px;
+    }
+    .creditos{
+        font-size: 10px;
     }
 }

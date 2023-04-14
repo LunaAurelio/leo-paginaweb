@@ -145,6 +145,7 @@ a {
 /* Estilos para el pie de página */
 footer {
     display: flex;
+    flex-direction: column;
     background-color: black;
     color: white;
     font-family: 'Times New Roman', Times, serif;
@@ -182,5 +183,26 @@ footer {
         width: 80%;
         height: 150px;
         border: gray 1px solid;
+    }
+}
+
+@media screen and (max-width: 200px) {
+    header {
+        font-size: small;
+        height: 100px;
+    }
+
+    h2 {
+        margin: 0px;
+        font-size: 20px;
+    }
+    .icon {
+        font-size: large;
+    }   
+    .redes {
+        margin: 0px;
+    }
+    .creditos{
+        font-size: 10px;
     }
 }
